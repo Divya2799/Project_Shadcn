@@ -36,26 +36,42 @@ const Navbar = () => {
         </NavLink>
         
         <div className="flex gap-6 items-center text-base font-medium">
-          <NavLink to="/" className={navLinkClasses} end>
+          <NavLink to="/" className={({ isActive }) =>
+          isActive
+            ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
+            : "text-gray-700  hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+        }>
             Home
           </NavLink>
           
-          <NavLink to="/about" className={navLinkClasses}>
+          <NavLink to="/about" className={({ isActive }) =>
+          isActive
+            ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
+            : "text-gray-700  hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+        }>
             About
           </NavLink>
           
-          <NavLink to="/contact" className={navLinkClasses}>
+          <NavLink to="/contact" className={({ isActive }) =>
+          isActive
+            ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
+            : "text-gray-700 hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+        }>
             Contact
           </NavLink>
           
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-purple-600 hover:text-yellow-500 font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
+                <NavigationMenuTrigger className={({ isActive }) =>
+          isActive
+            ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
+            : "text-gray-700  hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+        }>
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="w-52 p-2">
+                  <div className="w-52 p-3">
                     {serviceLinks.map((service) => (
                       <NavLink
                         key={service.to}
@@ -77,7 +93,11 @@ const Navbar = () => {
           
           <NavLink 
             to="/login" 
-            className="text-purple-600 hover:text-yellow-500 transition-colors duration-200"
+            className={({ isActive }) =>
+          isActive
+            ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
+            : "text-gray-700 hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+        }
           >
             LogIn
           </NavLink>
