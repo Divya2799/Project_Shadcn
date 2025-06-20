@@ -1,1 +1,6 @@
 @import "tailwindcss";
+link.active {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
