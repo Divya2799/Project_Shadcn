@@ -27,7 +27,7 @@ const Accordion = ({ items, allowMultiple = false }) => {
           {/* Accordion Header/Trigger */}
           <button
             onClick={() => toggleItem(item.id)}
-            className="flex w-full items-center justify-between py-4 px-6 font-medium text-purple-600 bg-black transition-all hover:bg-purple-500 hover:text-black bg-purple/90 rounded-lg mb-2 hover:border-purple-400/50 focus:outline-none focus:ring-2 focus:ring-purple-400/50 focus:ring-offset-2 focus:ring-offset-transparent"
+            className="flex w-full items-center justify-between py-4 px-6 font-medium text-black transition-all hover:bg-purple-300 hover:text-black bg-purple/90 rounded-lg mb-2 hover:border-purple-600/50 focus:outline-none focus:ring-2 focus:ring-purple-400/50 focus:ring-offset-2 focus:ring-offset-transparent"
             aria-expanded={isOpen(item.id)}
           >
             <span className="text-left">{item.question}</span>
