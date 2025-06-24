@@ -12,9 +12,8 @@ import {
 import { Button } from "@/components/ui/Button"
 
 const Navbar = () => {
-  const navLinkClasses = ({ isActive }) => 
-    `hover:text-yellow-500 transition-colors duration-200 ${
-      isActive ? 'text-red-500 font-semibold underline' : 'text-purple-600'
+  const navLinkClasses = ({ isActive }) =>
+    `hover:text-yellow-500 transition-colors duration-200 ${isActive ? 'text-red-500 font-semibold underline' : 'text-purple-600'
     }`
 
   const serviceLinks = [
@@ -35,8 +34,8 @@ const Navbar = () => {
             className='w-[120px] h-auto' 
           />
         </NavLink>
-        
-        <div className="flex w-auto gap-12 items-center text-base font-medium justify-center ">
+        <h1 className='hidden max-[1020px]:block'>Icon</h1>
+        <div className="flex w-auto gap-12 items-center text-base font-medium justify-center max-[1020px]:hidden">
           <NavLink to="/" className={({ isActive }) =>
            isActive
           ? "bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
@@ -52,7 +51,7 @@ const Navbar = () => {
           }>
             About
           </NavLink>
-          
+
           <NavLink to="/contact" className={({ isActive }) =>
           isActive
           ? " bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
@@ -60,10 +59,10 @@ const Navbar = () => {
           }>
           Contact
           </NavLink>
-          
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
+
+          <NavigationMenu className="me-5">
+            <NavigationMenuList >
+              <NavigationMenuItem >
                 <NavigationMenuTrigger className={({ isActive }) =>
           isActive
           ? "bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
