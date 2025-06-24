@@ -32,7 +32,7 @@ const Navbar = () => {
           <img 
             src="https://eternatek.in/wp-content/uploads/2024/08/WhatsApp_Image_2024-08-31_at_11.46.53_AM-removebg-preview.png" 
             alt="Logo" 
-            className='w-[210px] h-auto' 
+            className='w-[120px] h-auto' 
           />
         </NavLink>
         
@@ -72,13 +72,13 @@ const Navbar = () => {
           Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="w-52 bg-black rounded-md">
+                  <div className="bg-black rounded-md">
                     {serviceLinks.map((service) => (
                       <NavLink
                         key={service.to}
                         to={service.to}
                         className={({ isActive }) => 
-                      `block p-3 bg-black hover:bg-white text-purple-600 hover:text-black transition-colors duration-200 ${
+                      ` bg-black hover:bg-white text-purple-600 hover:text-black transition-colors duration-200 ${
                         isActive ? 'bg-white font-semibold text-black' : ''
                         }`
                         }
