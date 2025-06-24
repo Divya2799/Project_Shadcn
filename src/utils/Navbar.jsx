@@ -9,6 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
+import { Button } from "@/components/ui/Button"
 
 const Navbar = () => {
   const navLinkClasses = ({ isActive }) =>
@@ -27,57 +28,58 @@ const Navbar = () => {
     <nav className="py-2 bg-white shadow-sm">
       <div className="container mx-auto flex justify-between items-center px-4 flex-wrap">
         <NavLink to="/">
-          <img
-            src="https://eternatek.in/wp-content/uploads/2024/08/WhatsApp_Image_2024-08-31_at_11.46.53_AM-removebg-preview.png"
-            alt="Logo"
-            className='w-[150px] h-auto'
+          <img 
+            src="https://eternatek.in/wp-content/uploads/2024/08/WhatsApp_Image_2024-08-31_at_11.46.53_AM-removebg-preview.png" 
+            alt="Logo" 
+            className='w-[210px] h-auto' 
           />
         </NavLink>
-
-        <div className="flex gap-6 items-center text-base font-medium">
+        
+        <div className="flex w-auto gap-12 items-center text-base font-medium justify-center ">
           <NavLink to="/" className={({ isActive }) =>
-            isActive
-              ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
-              : "text-gray-700  hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+           isActive
+          ? "bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
+          : "hover:text-purple-800 hover:bg-purple-100 px-3 py-1 rounded transition-colors text-gray-700"
           }>
-            Home
-          </NavLink>
-
+          Home
+         </NavLink>
+          
           <NavLink to="/about" className={({ isActive }) =>
-            isActive
-              ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
-              : "text-gray-700  hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+          isActive
+          ? "bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
+          : "hover:text-purple-800 hover:bg-purple-100 px-3 py-1 rounded transition-colors text-gray-700"
           }>
             About
           </NavLink>
 
           <NavLink to="/contact" className={({ isActive }) =>
-            isActive
-              ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
-              : "text-gray-700 hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
+          isActive
+          ? " bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
+          : "hover:text-purple-800 hover:bg-purple-100 px-3 py-1 rounded transition-colors text-gray-700"
           }>
-            Contact
+          Contact
           </NavLink>
 
           <NavigationMenu className="me-5">
             <NavigationMenuList >
               <NavigationMenuItem >
                 <NavigationMenuTrigger className={({ isActive }) =>
-                  isActive
-                    ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
-                    : "text-gray-700  hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
-                }>
-                  Services
+          isActive
+          ? "bg-gradient-to-r from-purple-600 to-black text-white px-4 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out"
+          : "hover:text-purple-800 hover:bg-purple-100 px-3 py-1 rounded transition-colors text-gray-700"
+          }>
+          Services
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-red-500">
-                  <div className='w-45 '>
+                <NavigationMenuContent>
+                  <div className="w-52 bg-black rounded-md">
                     {serviceLinks.map((service) => (
                       <NavLink
                         key={service.to}
                         to={service.to}
-                        className={({ isActive }) =>
-                          `block px-4 py-2 rounded-md hover:bg-yellow-100 text-white hover:text-yellow-500 transition-colors duration-200 ${isActive ? 'bg-red-100 font-semibold text-red-500' : ''
-                          }`
+                        className={({ isActive }) => 
+                      `block p-3 bg-black hover:bg-white text-purple-600 hover:text-black transition-colors duration-200 ${
+                        isActive ? 'bg-white font-semibold text-black' : ''
+                        }`
                         }
                       >
                         {service.label}
@@ -88,17 +90,17 @@ const Navbar = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-
-          <NavLink
-            to="/login"
-            className={({ isActive }) =>
-              isActive
-                ? "bg-green-400 text-white px-3 py-1 rounded transition-colors"
-                : "text-gray-700 hover:text-orange-800 hover:bg-green-100 px-3 py-1 rounded transition-colors"
-            }
-          >
-            LogIn
-          </NavLink>
+          
+         <NavLink 
+         to="/login" 
+         className={({ isActive }) =>
+         isActive
+         ? "bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform scale-105 border-2 border-purple-500"
+         : "text-purple-700 hover:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-800 px-4 py-2 rounded-lg transition-all duration-300 ease-in-out border-2 border-purple-600 bg-white shadow-md hover:shadow-lg hover:scale-105"
+       }
+       >
+         LogIn
+        </NavLink>
         </div>
       </div>
     </nav>

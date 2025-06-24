@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../components/ui/button'
+import AccordionDemo from './services/AccordionDemo'
 
 const Home = () => {
   return (
@@ -15,8 +16,12 @@ const Home = () => {
           <img src="https://img.freepik.com/premium-vector/designers-agency-flat-design-concept-illustration-people-characters_9209-5399.jpg?uid=R185271760&ga=GA1.1.2114736879.1740217972&semt=ais_hybrid&w=740" alt="" className='w-7xl' />
         </div>
       </div>
+       <section>
+        <AccordionDemo />
+      </section>
     </div>
   )
+   
 }
 
 export default Home
