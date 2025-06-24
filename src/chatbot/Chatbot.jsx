@@ -19,7 +19,7 @@ const Chatbot = () => {
             <form>
                 <DialogTrigger asChild>
                     <div className="div">
-                           <img src="https://cdn-icons-png.flaticon.com/128/3649/3649460.png" className='w-10 cursor-pointer fixed bottom-5 right-5 z-99' alt="" />
+                           <img src="https://cdn-icons-png.flaticon.com/128/3649/3649460.png" className='w-18 border-3 border-black rounded-full p-1 bg-purple-300 cursor-pointer fixed bottom-5 right-5 z-99' alt="" />
                     </div>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px] bg-white">
