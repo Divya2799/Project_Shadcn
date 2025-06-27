@@ -9,7 +9,11 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
-import { Button } from "@/components/ui/Button"
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
   const navLinkClasses = ({ isActive }) =>
@@ -34,7 +38,9 @@ const Navbar = () => {
             className='w-[160px] h-[50px]'
           />
         </NavLink>
-        <h1 className='hidden max-[1020px]:block'>Icon</h1>
+        <h1 className='hidden font-bold max-[1020px]:block'>
+         <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+          </h1>
         <div className="flex w-auto gap-12 items-center text-base font-medium justify-center max-[1020px]:hidden">
           <NavLink to="/" className={({ isActive }) =>
             isActive

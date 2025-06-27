@@ -59,13 +59,37 @@ const Chatbot = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="div">
+        {/* <div className="div">
           <img
             src="https://cdn-icons-png.flaticon.com/128/3649/3649460.png"
             className="w-18 border-3 border-black rounded-full p-1 bg-purple-300 cursor-pointer fixed bottom-5 right-5 z-50"
             alt="Chatbot Icon"
           />
+        </div> */}
+
+        <div className="fixed bottom-5 right-5 z-50 group">
+       
+        <div className="relative animate-bounce">
+         
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+          
+          
+          <div className="relative">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3649/3649460.png"
+              className="w-16 h-16 border-4 border-white rounded-full p-2 bg-gradient-to-br from-purple-400 via-purple-500 to-blue-500 cursor-pointer shadow-2xl transform transition-all duration-300 hover:scale-110 hover:rotate-12 hover:shadow-purple-500/50 active:scale-95"
+              alt="Chatbot Icon"
+            />
+            
+          
+          </div>
+          
+          
+          <div className="absolute inset-0 rounded-full border-2 border-purple-400 opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 ease-out"></div>
+          <div className="absolute inset-0 rounded-full border-2 border-blue-400 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-700 ease-out animation-delay-150"></div>
         </div>
+        </div>
+
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] bg-white">
         <DialogHeader>
