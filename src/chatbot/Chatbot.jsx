@@ -26,15 +26,11 @@ const Chatbot = () => {
 
   const generateAnswer = async (e) => {
     e.preventDefault();
-
     const currentQuestion = question.trim();
     if (!currentQuestion) return;
-
     setGeneratingAnswer(true);
-
     setChatHistory((prev) => [...prev, { type: "question", content: currentQuestion }]);
-    setQuestion(""); 
-
+    setQuestion("");
     try {
       const response = await axios.post(
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAX4twBRL8Tr65fsTQjr8Dq3gL-Zs2Hxy4",
@@ -42,7 +38,6 @@ const Chatbot = () => {
           contents: [{ parts: [{ text: currentQuestion }] }],
         }
       );
-
       const aiResponse = response.data.candidates?.[0]?.content?.parts?.[0]?.text || "No response found.";
       setChatHistory((prev) => [...prev, { type: "answer", content: aiResponse }]);
     } catch (error) {
@@ -52,7 +47,6 @@ const Chatbot = () => {
         { type: "answer", content: "Sorry! Something went wrong. Try again!" },
       ]);
     }
-
     setGeneratingAnswer(false);
   };
 
@@ -74,7 +68,6 @@ const Chatbot = () => {
             <p className="text-xs">Best ChatBot Ever! Anything you ask me I'll be there for you.</p>
           </DialogDescription>
         </DialogHeader>
-
         <div
           className="flex-1 max-h-[400px] overflow-y-auto px-4 py-2 bg-gray-100 scrollbar-thin"
           ref={chatContainerRef}
@@ -85,16 +78,14 @@ const Chatbot = () => {
             chatHistory.map((chat, index) => (
               <div
                 key={index}
-                className={`my-2 ${
-                  chat.type === "question" ? "text-right" : "text-left"
-                }`}
+                className={`my-2 ${chat.type === "question" ? "text-right" : "text-left"
+                  }`}
               >
                 <div
-                  className={`inline-block max-w-[80%] p-3 rounded text-sm ${
-                    chat.type === "question"
-                      ? "bg-red-400 text-white rounded-br-none"
-                      : "bg-gray-200 text-gray-800 rounded-bl-none"
-                  }`}
+                  className={`inline-block max-w-[80%] p-3 rounded text-sm ${chat.type === "question"
+                    ? "bg-red-400 text-white rounded-br-none"
+                    : "bg-gray-200 text-gray-800 rounded-bl-none"
+                    }`}
                 >
                   <ReactMarkdown>{chat.content}</ReactMarkdown>
                 </div>
@@ -110,8 +101,6 @@ const Chatbot = () => {
             </div>
           )}
         </div>
-
-        {/* Chat Input */}
         <DialogFooter>
           <form onSubmit={generateAnswer} className="w-full">
             <div className="flex gap-2">
