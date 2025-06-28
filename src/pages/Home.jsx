@@ -51,8 +51,8 @@ const Home = () => {
       <div className="hero flex flex-col lg:flex-row justify-between items-center p-6 gap-10">
         <div className="content space-y-5 max-w-2xl">
           <h1 className='text-5xl lg:text-6xl text-purple-900 font-bold font-sans leading-tight'>Make Your Business Successful</h1>
-          <p className='text-lg font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusantium. Quisquam, labore, rem corporis voluptas obcaecati tenetur iste facere necessitatibus officiis sapiente quos itaque hic, incidunt sint veniam deleniti doloremque.</p>
-          <p className='text-lg font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel nostrum voluptas quidem cum molestias assumenda laboriosam, hic possimus delectus tenetur asperiores ipsam quos unde quia, quis optio, facilis iure?</p>
+          <p className='text-lg  font-bold py-5'>Do Not Wait For The Right Opportunity: Create It Now</p>
+          <p className='text-lg font-light'>At Eternatek, we are dedicated to delivering cutting-edge IT solutions that drive digital transformation and empower businesses to thrive in the modern world. With expertise across a wide range of technologies, we specialize in providing tailored services including software development, cloud computing, data analytics, and IT consulting.</p>
           <Button className="bg-gradient-to-r from-purple-600 to-black text-white px-5 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-300 hover:text-black hover:bg-white">
             Explore More
           </Button>
