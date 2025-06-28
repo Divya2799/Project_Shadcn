@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../components/ui/button'
-import AccordionDemo from './services/AccordionDemo'
+import AccordionDemo from '../components/myComponents/AccordionDemo'
 import { CircleChevronDown, Database, Mic, PieChart, BrainCircuit, AppWindow } from 'lucide-react'
 import { ArrowRight, Code, Cpu, Sparkles } from 'lucide-react'
 
@@ -51,9 +51,11 @@ const Home = () => {
       <div className="hero flex flex-col lg:flex-row justify-between items-center p-6 gap-10">
         <div className="content space-y-5 max-w-2xl">
           <h1 className='text-5xl lg:text-6xl text-purple-900 font-bold font-sans leading-tight'>Make Your Business Successful</h1>
-          <p className='text-lg  font-bold py-5'>Do Not Wait For The Right Opportunity: Create It Now</p>
-          <p className='text-lg font-light'>At Eternatek, we are dedicated to delivering cutting-edge IT solutions that drive digital transformation and empower businesses to thrive in the modern world. With expertise across a wide range of technologies, we specialize in providing tailored services including software development, cloud computing, data analytics, and IT consulting.</p>
-          <Button className="bg-gradient-to-r from-purple-600 to-black text-white px-5 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-300 hover:text-black hover:bg-white">
+          <p className='text-lg font-regular'>Eternatek Technologies Pvt Ltd is a leading IT solutions provider dedicated to transforming businesses through innovative technology and creative expertise. With a wide range of services including Website Development, App Development, Digital Marketing, SEO & SEM, Content Writing, Web Hosting, UI & UX Designing, Graphic Designing, Data Analysis, Business Analysis, and Marketing Research, we empower our clients to achieve their goals in an increasingly digital world. Our team of skilled professionals is committed to delivering high-quality, customized solutions that drive growth and success.</p>
+          
+        
+
+          <Button variant={"mybtn"}>
             Explore More
           </Button>
         </div>
@@ -61,7 +63,7 @@ const Home = () => {
           <img
             src="https://img.freepik.com/premium-vector/designers-agency-flat-design-concept-illustration-people-characters_9209-5399.jpg?uid=R185271760&ga=GA1.1.2114736879.1740217972&semt=ais_hybrid&w=740"
             alt="Business Success"
-            className='w-full max-w-xl'
+            className='w-full max-w-8xl'
           />
         </div>
       </div>
@@ -94,21 +96,7 @@ const Home = () => {
 
 
       
-        <div className="hero flex justify-between container">
-          <div className=" p-5 flex justify-center items-start gap-10 flex-col content space-y-5">
-
-            <h1 className=' flex w-2xl text-6xl text-purple-900 font-extrabold font-sans  '>Make Your Business  Successful</h1>
-            {/* <p className='w-1xl text-1xl font-light'>Lorem ipsum wdolor sit amet consectetur adipisicing elit. Architecto, accusantium. Quisquam, labore, rem corporis voluptas obcaecati tenetur iste facere necessitatibus officiis sapiente quos itaque hic, incidunt sint veniam deleniti doloremque.</p>
-          <p className='w-1xl text-1xl font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel nostrum voluptas quidem cum molestias assumenda laboriosam, hic possimus delectus tenetur asperiores ipsam quos unde quia, quis optio, facilis iure?</p> */}
-            <Button className="bg-gradient-to-r from-purple-600 to-black text-white  px-8 py-5 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-ease-in-out
-           hover:text-black cursor-pointer hover:bg-white">Explore More</Button>
-
-
-          </div>
-          <div className="img">
-            <img src="https://img.freepik.com/premium-vector/designers-agency-flat-design-concept-illustration-people-characters_9209-5399.jpg?uid=R185271760&ga=GA1.1.2114736879.1740217972&semt=ais_hybrid&w=740" alt="" className='max-w-3xl' />
-          </div>
-        </div>
+        
         <div>
           <h1 className='flex justify-center items-center text-5xl font-bold font-sans p-12 text-black'>Our Solutions that Help you Grow</h1>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -130,21 +118,24 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
-                <button className="bg-gradient-to-r from-purple-900 to-grey text-white px-8 py-4 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-700 transition-all duration-ease-in-out
-           hover:text-black cursor-pointer hover:bg-white">
+                <Button variant={"mybtn"}>
                   Get Started
-
-                </button>
-
-                <button className="bg-gradient-to-r from-purple-900 to-grey text-white px-8 py-4 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-700 transition-all duration-ease-in-out
-           hover:text-black cursor-pointer hover:bg-white">
+                </Button>
+                
+                <Button variant={"mybtn"}>
                   Learn More
-                </button>
+                </Button>
+
+                
               </div>
             </div>
 
+             
 
-            <div className="relative">
+           
+
+
+            {/* <div className="relative">
               <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-purple-900/30 backdrop-blur-sm">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 p-6 rounded-xl border border-purple-700/30 hover:border-purple-600/50 transition-all duration-300 group">
@@ -176,13 +167,15 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
 
 
 
 
           </div>
+
+       
 
         </div>
         <section className='mt-3.5 pt-9'
