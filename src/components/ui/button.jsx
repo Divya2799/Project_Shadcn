@@ -20,7 +20,9 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
-        spl:"bg-white border border-transparent text-sky-700 hover:bg-transparent hover:text-white hover:border-white"
+        spl:"bg-white border border-transparent text-sky-700 hover:bg-transparent hover:text-white hover:border-white",
+        mybtn:"bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-1 px-3 rounded-lg shadow-lg transform scale-105 border-2 border-purple-500"
+              
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -28,6 +30,7 @@ const buttonVariants = cva(
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
       },
+     
     },
     defaultVariants: {
       variant: "default",
