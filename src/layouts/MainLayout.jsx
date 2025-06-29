@@ -13,7 +13,7 @@ const MainLayout = () => {
       <hr className="mb-2" />
       <Chatbot/>
       {/* <SimpleSlider/> */}
-      <HeaderCarousel/>
+      {/* <HeaderCarousel/> */}
       <main className="flex-grow p-4">
         <Outlet />
       </main>
