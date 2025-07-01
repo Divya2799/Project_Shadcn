@@ -21,13 +21,13 @@ const Accordion = ({ items, allowMultiple = false }) => {
   const isOpen = (itemId) => openItems.includes(itemId);
 
   return (
-    <div className="w-full space-y-2">
+    <div className="w-full space-y-2 py-2">
       {items.map((item) => (
         <div key={item.id} className="text-lg text-black">
-          {/* Accordion Header/Trigger */}
+        
           <button
             onClick={() => toggleItem(item.id)}
-            className="flex w-full items-center justify-between py-4 px-6 font-medium text-black transition-all hover:bg-purple-300 hover:text-black bg-purple/90 rounded-lg mb-2 hover:border-purple-600/50 focus:outline-none focus:ring-1 focus:ring-purple-400/50 focus:ring-offset-1 focus:ring-offset-transparent"
+            className="flex w-full items-center justify-between py-4 px-6 font-medium text-black transition-all hover:bg-purple-300 hover:text-black bg-purple/90 rounded-lg mb-2 hover:border-purple-600/50 focus:outline-none focus:ring-0 focus:border-1 border-purple-600"
             aria-expanded={isOpen(item.id)}
           >
             <span className="text-left">{item.question}</span>
@@ -38,7 +38,7 @@ const Accordion = ({ items, allowMultiple = false }) => {
             />
           </button>
 
-          {/* Accordion Content */}
+      
           <div
             className={`overflow-hidden transition-all duration-300 ease-out ${
               isOpen(item.id) 

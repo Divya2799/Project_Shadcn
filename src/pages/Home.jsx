@@ -48,7 +48,7 @@ const Home = () => {
 
   return (
     <div>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
         {/* Animated Circular Sparkles */}
         <div className="absolute inset-0 overflow-hidden">
@@ -183,7 +183,7 @@ const Home = () => {
         {/* Bottom fade overlay */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
       </div>
-      
+
       <div className="hero flex flex-col lg:flex-row justify-between items-center p-6 gap-10">
         <div className="content space-y-5 max-w-2xl">
           <h1 className='text-5xl lg:text-6xl text-purple-900 font-bold font-sans leading-tight'>Make Your Business Successful</h1>
@@ -191,87 +191,111 @@ const Home = () => {
 
 
 
-          <Button variant={"mybtn"}>
-            Explore More
-          </Button>
-        </div>
-        <div className="img">
-          <img
-            src="https://img.freepik.com/premium-vector/designers-agency-flat-design-concept-illustration-people-characters_9209-5399.jpg?uid=R185271760&ga=GA1.1.2114736879.1740217972&semt=ais_hybrid&w=740"
-            alt="Business Success"
-            className='w-full max-w-8xl'
-          />
-        </div>
-      </div>
-
-
-      <div className="my-10 px-4">
-        <p className="text-center text-4xl font-bold py-5">
-          Accelerate Your Growth with Us
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {
-            dataServices.map((item) => (
-              <div key={item.id} className="border p-5 rounded-xl shadow-md space-y-3 bg-gradient-to-r from-slate-500 to-slate-800 text-white transition-transform duration-300 hover:translate-y-1 cursor-pointer">
-                <div className="flex items-center gap-4">
-                  {item.icon}
-                  <h3 className="text-2xl font-semibold">{item.title}</h3>
-                </div>
-                <p className="">
-                  {item.description.length > 100
-                    ? item.description.slice(0, 100) + "..."
-                    : item.description}
-                </p>
-                <Button variant="outline">Know More</Button>
-              </div>
-            ))
-          }
-        </div>
-      </div>
+          <div className="hero flex flex-col lg:flex-row justify-between items-center p-6 gap-10">
+            <div className="content space-y-5 max-w-2xl">
+              <h1 className='text-5xl lg:text-6xl text-purple-900 font-bold font-sans leading-tight'>Make Your Business Successful</h1>
+              <p className='text-lg font-regular'>Eternatek Technologies Pvt Ltd is a leading IT solutions provider dedicated to transforming businesses through innovative technology and creative expertise. With a wide range of services including Website Development, App Development, Digital Marketing, SEO & SEM, Content Writing, Web Hosting, UI & UX Designing, Graphic Designing, Data Analysis, Business Analysis, and Marketing Research, we empower our clients to achieve their goals in an increasingly digital world. Our team of skilled professionals is committed to delivering high-quality, customized solutions that drive growth and success.</p>
 
 
 
-
-      <div>
-        <h1 className='flex justify-center items-center text-5xl font-bold font-sans p-12 text-black'>Our Solutions that Help you Grow</h1>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center"></div>
-          <div className="text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start space-x-2 mb-6">
-              <Sparkles className="w-5 h-5 text-purple-700" />
-              <span className="text-purple-300 font-medium">Next-Gen Technology Solutions</span>
+              <Button variant={"mybtn"}>
+                Explore More
+              </Button>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
-              Innovating the
-              <span className="block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
-                Digital Future
-              </span>
-            </h1>
+            <div className="img">
+              <img
+                src="https://img.freepik.com/premium-vector/designers-agency-flat-design-concept-illustration-people-characters_9209-5399.jpg?uid=R185271760&ga=GA1.1.2114736879.1740217972&semt=ais_hybrid&w=740"
+                alt="Business Success"
+                className='w-full max-w-8xl'
+              />
+            </div>
+          </div>
 
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-              At Eternatek, we craft cutting-edge technology solutions that transform businesses and shape tomorrow's digital landscape. Experience innovation without limits.
+
+          <div className="my-10 px-4">
+            <p className="text-center text-4xl font-bold py-5">
+              Accelerate Your Growth with Us
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
-              <Button variant={"mybtn"}>
-                Get Started
-              </Button>
-
-              <Button variant={"mybtn"}>
-                Learn More
-              </Button>
-
-
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {
+                dataServices.map((item) => (
+                  <div key={item.id} className="border p-5 rounded-xl shadow-md space-y-3 bg-gradient-to-l from-purple-600 to-purple-900 text-white transition-transform duration-300 hover:translate-y-1 cursor-pointer">
+                    <div className="flex items-center gap-4">
+                      {item.icon}
+                      <h3 className="text-2xl font-semibold">{item.title}</h3>
+                    </div>
+                    <p className="">
+                      {item.description.length > 100
+                        ? item.description.slice(0, 100) + "..."
+                        : item.description}
+                    </p>
+                    <Button variant="outline">Know More</Button>
+                  </div>
+                ))
+              }
             </div>
           </div>
 
 
 
 
+          <div>
+            <h1 className='flex justify-center items-center text-5xl font-bold font-sans p-12 text-black'>Our Solutions that Help you Grow</h1>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <div className="grid lg:grid-cols-2 gap-12 items-center"></div>
+              <div className="text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start space-x-2 mb-6">
+                  <Sparkles className="w-5 h-5 text-purple-700" />
+                  <span className="text-purple-300 font-medium">Next-Gen Technology Solutions</span>
+                </div>
+                <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
+                  Innovating the
+                  <span className="block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
+                    Digital Future
+                  </span>
+                </h1>
 
 
-          {/* <div className="relative">
+                <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
+                  <Button variant={"mybtn"}>
+                    Get Started
+                  </Button>
+
+                  <Button variant={"mybtn"}>
+                    Learn More
+                  </Button>
+
+
+                </div>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
+                Innovating the
+                <span className="block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
+                  Digital Future
+                </span>
+              </h1>
+
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                At Eternatek, we craft cutting-edge technology solutions that transform businesses and shape tomorrow's digital landscape. Experience innovation without limits.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
+                <Button variant="gradient2">
+                  Get Started
+                </Button>
+                <Button variant="gradient2">
+                  Learn More
+                </Button>
+              </div>
+            </div>
+
+
+
+
+
+
+            {/* <div className="relative">
               <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-purple-900/30 backdrop-blur-sm">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 p-6 rounded-xl border border-purple-700/30 hover:border-purple-600/50 transition-all duration-300 group">
@@ -279,26 +303,13 @@ const Home = () => {
                     <h3 className="text-white font-semibold mb-2">Development</h3>
                     <p className="text-gray-400 text-sm">Custom software solutions</p>
                   </div>
-
-                  <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 p-6 rounded-xl border border-purple-700/30 hover:border-purple-600/50 transition-all duration-300 group">
-                    <Cpu className="w-8 h-8 text-purple-400 mb-4 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-white font-semibold mb-2">AI & ML</h3>
-                    <p className="text-gray-400 text-sm">Intelligent automation</p>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 p-6 rounded-xl border border-purple-700/30 hover:border-purple-600/50 transition-all duration-300 group col-span-2">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                      <span className="text-gray-300">System Status: Optimal</span>
+                  <div className="mt-4 bg-slate-700/50 rounded-lg p-3">
+                    <div className="flex justify-between text-sm text-gray-400 mb-2">
+                      <span>Performance</span>
+                      <span>98.7%</span>
                     </div>
-                    <div className="mt-4 bg-slate-700/50 rounded-lg p-3">
-                      <div className="flex justify-between text-sm text-gray-400 mb-2">
-                        <span>Performance</span>
-                        <span>98.7%</span>
-                      </div>
-                      <div className="bg-slate-600 rounded-full h-2">
-                        <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full w-[98.7%]"></div>
-                      </div>
+                    <div className="bg-slate-600 rounded-full h-2">
+                      <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full w-[98.7%]"></div>
                     </div>
                   </div>
                 </div>
@@ -309,15 +320,18 @@ const Home = () => {
 
 
 
+          </div>
+
+
+
         </div>
 
 
-
+        <section className='mt-3.5 pt-9'
+        >
+          <AccordionDemo />
+        </section>
       </div>
-      <section className='mt-3.5 pt-9'
-      >
-        <AccordionDemo />
-      </section>
     </div>
   )
 }
