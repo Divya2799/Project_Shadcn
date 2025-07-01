@@ -12,7 +12,8 @@ const MainLayout = () => {
       <Navbar />
       <hr className="mb-2" />
       <Chatbot/>
-     
+      {/* <SimpleSlider/> */}
+      {/* <HeaderCarousel/> */}
       <main className="flex-grow p-4">
         <Outlet />
       </main>
