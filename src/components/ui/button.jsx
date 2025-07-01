@@ -20,7 +20,9 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
-        spl:"bg-white border border-transparent text-sky-700 hover:bg-transparent hover:text-white hover:border-white"
+        spl:"bg-white border border-transparent text-sky-700 hover:bg-transparent hover:text-white hover:border-white",
+        gradient:"bg-gradient-to-r from-purple-600 to-black text-white px-5 py-2 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-500 transition-all duration-300 hover:text-black hover:bg-white",
+        gradient2:"bg-gradient-to-r from-purple-900 to-grey text-white px-8 py-4 rounded-lg font-semibold shadow-lg transform scale-105 border border-purple-700 transition-all duration-ease-in-out hover:text-black cursor-pointer hover:bg-white"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
