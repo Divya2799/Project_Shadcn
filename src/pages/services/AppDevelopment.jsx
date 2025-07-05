@@ -127,11 +127,11 @@ const AppDevelopment = () => {
                 and drive business growth. We create apps that users love and businesses rely on.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-purple-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-600 transition-colors flex items-center space-x-2">
+                <button className="bg-purple-500 text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-purple-600 transition-colors flex items-center space-x-2">
                   <span>Start Your App</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button className="border-2 border-purple-300 text-purple-100 px-8 py-4 rounded-lg font-semibold hover:bg-purple-500 hover:border-purple-500 hover:text-white transition-all">
+                <button className="border-2 border-purple-300 text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-purple-500 hover:border-purple-500 hover:text-purple-600 transition-all">
                   View Our Apps
                 </button>
               </div>
@@ -325,7 +325,7 @@ const AppDevelopment = () => {
             <button className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
               Discuss Your App Idea
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all">
+            <button className="border-2 border-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all">
               Get Development Quote
             </button>
           </div>

@@ -152,11 +152,11 @@ const DigitalMarketing = () => {
                 that connect you with your ideal customers and maximize your ROI.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-emerald-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-600 transition-colors flex items-center space-x-2">
+                <button className="bg-emerald-500 text-emerald-700 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-600 hover:text-emerald-500 transition-colors flex items-center space-x-2">
                   <span>Start Growing Today</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button className="border-2 border-emerald-300 text-emerald-100 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-500 hover:border-emerald-500 hover:text-white transition-all">
+                <button className="border-2 border-emerald-300 text-emerald-700 px-8 py-4 rounded-lg font-semibold hover:bg-emerald-500 hover:text-emerald-500 transition-all">
                   View Case Studies
                 </button>
               </div>
@@ -343,10 +343,10 @@ const DigitalMarketing = () => {
             for your business. Start your journey to success today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 hover:text-emerald-300 transition-colors">
               Get Free Marketing Audit
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-emerald-600 transition-all">
+            <button className="border-2 border-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-emerald-300 transition-all">
               Schedule Strategy Call
             </button>
           </div>
