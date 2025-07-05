@@ -95,11 +95,11 @@ const WebDevelopment = () => {
                 that exceed expectations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors flex items-center space-x-2">
+                <button className="bg-blue-500 text-blue-400 px-8 py-4 rounded-lg font-semibold hover:bg-blue-500 hover:text-blue-700 transition-colors flex items-center space-x-2">
                   <span>Start Your Project</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button className="border-2 border-blue-300 text-blue-100 px-8 py-4 rounded-lg font-semibold hover:bg-blue-500 hover:border-blue-500 hover:text-white transition-all">
+                <button className="border-2 border-blue-300 text-blue-400 px-8 py-4 rounded-lg font-semibold hover:bg-blue-500 hover:text-blue-700 transition-all">
                   View Portfolio
                 </button>
               </div>
@@ -235,10 +235,10 @@ const WebDevelopment = () => {
             and helps your business grow online.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 hover:text-blue-400 transition-colors">
               Get Free Quote
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all">
+            <button className="border-2 border-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-400 transition-all">
               Schedule Consultation
             </button>
           </div>
