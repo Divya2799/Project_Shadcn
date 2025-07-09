@@ -164,7 +164,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="p-1 bg-white shadow-sm relative">
+    <nav className="py-1 bg-white shadow-sm relative">
       <div className="container mx-auto flex justify-between items-center px-4 flex-wrap">
         <NavLink to="/">
           <img

@@ -10,13 +10,10 @@ import Headroom from "react-headroom";
 const MainLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Headroom>
+      <Headroom className="z-[1000]">
         <Navbar />
       </Headroom>
-      <hr className="mb-2" />
       <Chatbot />
-      {/* <SimpleSlider/> */}
-      {/* <HeaderCarousel/> */}
       <main className="flex-grow p-4">
         <Outlet />
       </main>
