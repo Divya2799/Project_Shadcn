@@ -303,14 +303,16 @@ const Navbar = () => {
             Contact
           </NavLink>
 
-          <NavigationMenu className="w-auto">
+
+
+                <NavigationMenu className="w-auto">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="hover:text-purple-800 hover:bg-purple-100 px-3 py-1 rounded transition-colors text-gray-700 data-[state=open]:bg-purple-100 data-[state=open]:text-purple-800">
+                <NavigationMenuTrigger className="hover:text-purple-800 hover:bg-purple-100 px-3 py-1 rounded transition-colors text-gray-700 ">
                   Services
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-white shadow-lg border rounded-lg">
-                  <div className="p-2 w-[200px] gap-2">
+                <NavigationMenuContent>
+                  <div className="p-2 w-[200px] gap-2 bg-black ">
                     {serviceLinks.map((service) => (
                       <NavLink
                         key={service.to}
@@ -329,7 +331,10 @@ const Navbar = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
-          </NavigationMenu>
+          </NavigationMenu> 
+
+
+          
 
           <NavLink
             to="/login"

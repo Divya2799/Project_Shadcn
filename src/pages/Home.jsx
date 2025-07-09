@@ -165,7 +165,7 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-pink-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
 
-              <button className="group px-8 py-4 border-2 border-gray-400 text-gray-300 rounded-full font-semibold text-lg transition-all duration-300 hover:border-white hover:text-white hover:bg-white/10">
+              <button className="group px-8 py-4 border-2 border-gray-400 text-purple-700 rounded-full font-semibold text-lg transition-all duration-300 hover:border-white hover:text-red-900 hover:bg-white/10">
                 Learn More
               </button>
             </div>
@@ -185,13 +185,11 @@ const Home = () => {
       </div>
 
       <div className="hero flex flex-col lg:flex-row justify-between items-center p-6 gap-10">
-        <div className="content space-y-5 max-w-2xl">
-          <h1 className='text-5xl lg:text-6xl text-purple-900 font-bold font-sans leading-tight'>Make Your Business Successful</h1>
-          <p className='text-lg font-regular'>Eternatek Technologies Pvt Ltd is a leading IT solutions provider dedicated to transforming businesses through innovative technology and creative expertise. With a wide range of services including Website Development, App Development, Digital Marketing, SEO & SEM, Content Writing, Web Hosting, UI & UX Designing, Graphic Designing, Data Analysis, Business Analysis, and Marketing Research, we empower our clients to achieve their goals in an increasingly digital world. Our team of skilled professionals is committed to delivering high-quality, customized solutions that drive growth and success.</p>
+        
 
 
 
-          <div className="hero flex flex-col lg:flex-row justify-between items-center p-6 gap-10">
+          <div className="hero flex flex-col lg:flex-row justify-center items-center p-6 gap-10">
             <div className="content space-y-5 max-w-2xl">
               <h1 className='text-5xl lg:text-6xl text-purple-900 font-bold font-sans leading-tight'>Make Your Business Successful</h1>
               <p className='text-lg font-regular'>Eternatek Technologies Pvt Ltd is a leading IT solutions provider dedicated to transforming businesses through innovative technology and creative expertise. With a wide range of services including Website Development, App Development, Digital Marketing, SEO & SEM, Content Writing, Web Hosting, UI & UX Designing, Graphic Designing, Data Analysis, Business Analysis, and Marketing Research, we empower our clients to achieve their goals in an increasingly digital world. Our team of skilled professionals is committed to delivering high-quality, customized solutions that drive growth and success.</p>
@@ -210,6 +208,7 @@ const Home = () => {
               />
             </div>
           </div>
+            </div>
 
 
           <div className="my-10 px-4">
@@ -230,7 +229,7 @@ const Home = () => {
                         ? item.description.slice(0, 100) + "..."
                         : item.description}
                     </p>
-                    <Button variant="outline">Know More</Button>
+                    <Button variant="kn">Know More</Button>
                   </div>
                 ))
               }
@@ -242,7 +241,8 @@ const Home = () => {
 
           <div>
             <h1 className='flex justify-center items-center text-5xl font-bold font-sans p-12 text-black'>Our Solutions that Help you Grow</h1>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className='hero flex flex-col lg:flex-row justify-center items-center p-6 gap-10'>
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center"></div>
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start space-x-2 mb-6">
@@ -251,13 +251,26 @@ const Home = () => {
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
                   Innovating the
-                  <span className="block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
+                  <span className="p-2 block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
                     Digital Future
                   </span>
                 </h1>
 
 
-                <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
+                
+              </div>
+              {/* <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
+                Innovating the
+                <span className="block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
+                  Digital Future
+                </span>
+              </h1> */}
+
+              <p className="p-2 text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                At Eternatek, we craft cutting-edge technology solutions that transform businesses and shape tomorrow's digital landscape. Experience innovation without limits.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
                   <Button variant={"mybtn"}>
                     Get Started
                   </Button>
@@ -268,27 +281,17 @@ const Home = () => {
 
 
                 </div>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-black mb-6 leading-tight">
-                Innovating the
-                <span className="block bg-gradient-to-r from-purple-700 to-purple-900 bg-clip-text text-transparent">
-                  Digital Future
-                </span>
-              </h1>
 
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-                At Eternatek, we craft cutting-edge technology solutions that transform businesses and shape tomorrow's digital landscape. Experience innovation without limits.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 pb-9 justify-center lg:justify-start">
-                <Button variant="gradient2">
-                  Get Started
-                </Button>
-                <Button variant="gradient2">
-                  Learn More
-                </Button>
-              </div>
+              
             </div>
+            <div className='max-w-5xl max-auto p-3 '>
+              <img
+                src="https://media.istockphoto.com/id/1215275724/vector/informative-flyer-service-promotion-cartoon-flat.jpg?s=612x612&w=0&k=20&c=wvbroe7YpCQqCMbAOXQLal9kHZbHX_hc1209i6uE8Zs=" alt="" className='w-full max-w-8xl'
+               
+              />
+            </div>
+          </div>
+
 
 
 
@@ -324,7 +327,7 @@ const Home = () => {
 
 
 
-        </div>
+      
 
 
         <section className='mt-3.5 pt-9'
@@ -332,7 +335,7 @@ const Home = () => {
           <AccordionDemo />
         </section>
       </div>
-    </div>
+   
   )
 }
 
