@@ -135,10 +135,10 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+                <Button variant="mybtn" size="lg">
                   Get Started Today
                 </Button>
-                <Button variant="outline" size="lg" className="border-slate-400 text-slate-300 hover:bg-slate-800 px-8 py-4 text-lg">
+                <Button variant="mybtn" size="lg" className="border-slate-400 text-slate-300 hover:bg-slate-800 px-8 py-4 text-lg">
                   View Our Work
                 </Button>
               </div>
